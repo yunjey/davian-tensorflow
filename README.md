@@ -1,5 +1,5 @@
-# TensorFlow Tutorial
-TensorFlow tutorial for beginner to intermediate. This project is created for DAVIAN lab study. 
+# DAVIAN TensorFLow
+This project is created for DAVIAN TensorFLow study. 
 
 ## Tutorial index
 #### Week 1 
