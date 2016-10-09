@@ -9,4 +9,4 @@ This project is created for DAVIAN TensorFLow study.
 
 (2) [Feed forward neural network](https://github.com/yunjey/tensorflow-tutorial/blob/master/week1/3.%20feed_forward_neural_network.ipynb)
 
-![alt tag](jpg/mnist_example.jpg)
+![alt tag](jpg/nerual_network.jpg)
