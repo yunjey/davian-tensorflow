@@ -1,10 +1,11 @@
 # DAVIAN TensorFlow (ongoing)
 This project is created for DAVIAN TensorFlow study.
 ## Reference
-[Tensorflow-Examples](https://github.com/aymericdamien/TensorFlow-Examples) - TensorFlow tutorials and code examples for beginners
+[TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples) - TensorFlow tutorials and code examples for beginners
 
-[Tensorflow API](https://www.tensorflow.org/versions/r0.11/api_docs/index.html) - Tensorflow API Documentation
+[TensorFlow API](https://www.tensorflow.org/versions/r0.11/api_docs/index.html) - TensorFlow API Documentation
 
+[TensorFlow in a Nutshell](https://chatbotnewsdaily.com/tensorflow-in-a-nutshell-part-two-hybrid-learning-98c121d35392#.rma8rpl8h) - TensorFlow tutorial for Hybrid Learning
 
 ## Tutorial index
 #### Week 1 
@@ -21,5 +22,7 @@ This project is created for DAVIAN TensorFlow study.
 
 #### Week 3
 
-will be update
+* [TensorBoard](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/1.%20tensorboard.ipynb) - Tensorboard for visualizing the model and real-time debugging 
+* [Wide and Deep Network](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/2.%20wide_and_deep_network.ipynb) - Wide and Deep Network for classification and regression
+* Sentiment Analysis - LSTM and word embeddings for sentiment analysis (will be update)
 
