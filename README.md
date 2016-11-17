@@ -1,11 +1,12 @@
 # DAVIAN TensorFlow (ongoing)
 This project is created for DAVIAN TensorFlow study.
-## Reference
+
+## References
 [TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples) - TensorFlow tutorials and code examples for beginners
 
 [TensorFlow API](https://www.tensorflow.org/versions/r0.11/api_docs/index.html) - TensorFlow API Documentation
 
-[TensorFlow in a Nutshell](https://chatbotnewsdaily.com/tensorflow-in-a-nutshell-part-two-hybrid-learning-98c121d35392#.rma8rpl8h) - TensorFlow tutorial for Hybrid Learning
+[TensorFlow in a Nutshell](https://chatbotnewsdaily.com/tensorflow-in-a-nutshell-part-two-hybrid-learning-98c121d35392#.rma8rpl8h) - Combining categorical and continuous features
 
 ## Tutorial index
 #### Week 1 
