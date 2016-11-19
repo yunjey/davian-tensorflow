@@ -25,6 +25,6 @@ This project is created for DAVIAN TensorFlow study.
 #### Week 3
 
 * [TensorBoard](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/1.%20tensorboard.ipynb) - Tensorboard for visualizing the model and real-time debugging 
-* [Wide and Deep Network](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/2.%20wide_and_deep_network.ipynb) - Wide and Deep Network for classification and regression
-* Sentiment Analysis - LSTM and word embeddings for sentiment analysis (will be update)
+* Word2Vec - Word2Vec: Efficient word embeddings using skip-gram (will be update)
+* Sequence to Sequence Learning - Machine translation with RNN Encoder-Decoder structure (will be update)
 
