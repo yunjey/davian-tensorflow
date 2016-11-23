@@ -25,5 +25,5 @@ This project is created for DAVIAN TensorFlow study.
 #### Week 3
 
 * [TensorBoard](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/1.%20tensorboard.ipynb) - Tensorboard for visualizing the model and real-time debugging 
-* Sequence to Sequence Learning - Neural machine translation from English to Korean (will be update)
+* [Sequence to Sequence Learning](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/2.%20neural_machine_translation.ipynb) - Neural machine translation from English to Korean
 
