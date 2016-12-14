@@ -21,6 +21,11 @@ This project is created for DAVIAN TensorFlow study.
 * [TensorBoard](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/1.%20tensorboard.ipynb) - Tensorboard for visualizing the model and real-time debugging 
 * [Sequence to Sequence Learning](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/2.%20neural_machine_translation.ipynb) - Neural machine translation with attention mechanism
 
+#### Week 4
+
+* Generative Model - will be updated
+
+
 <br>
 
 ## References
