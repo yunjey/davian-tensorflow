@@ -1,13 +1,6 @@
 # DAVIAN TensorFlow (ongoing)
 This project is created for DAVIAN TensorFlow study.
 
-## References
-[TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples) - TensorFlow tutorials and code examples for beginners
-
-[TensorFlow API](https://www.tensorflow.org/versions/r0.11/api_docs/index.html) - TensorFlow API Documentation
-
-[TensorFlow in a Nutshell](https://chatbotnewsdaily.com/tensorflow-in-a-nutshell-part-two-hybrid-learning-98c121d35392#.rma8rpl8h) - TensorFlow tutorial for Hybrid Learning
-
 
 ## Tutorial index
 #### Week 1 
@@ -26,4 +19,10 @@ This project is created for DAVIAN TensorFlow study.
 
 * [TensorBoard](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/1.%20tensorboard.ipynb) - Tensorboard for visualizing the model and real-time debugging 
 * [Sequence to Sequence Learning](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/2.%20neural_machine_translation.ipynb) - Neural machine translation with attention mechanism
+
+
+## References
+[TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples) - TensorFlow tutorials and code examples for beginners
+
+[TensorFlow API](https://www.tensorflow.org/versions/r0.11/api_docs/index.html) - TensorFlow API Documentation
 
