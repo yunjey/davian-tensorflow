@@ -1,6 +1,7 @@
 # DAVIAN TensorFlow (ongoing)
 This project is created for DAVIAN TensorFlow study.
 
+<br>
 
 ## Tutorial index
 #### Week 1 
@@ -20,9 +21,10 @@ This project is created for DAVIAN TensorFlow study.
 * [TensorBoard](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/1.%20tensorboard.ipynb) - Tensorboard for visualizing the model and real-time debugging 
 * [Sequence to Sequence Learning](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week3/2.%20neural_machine_translation.ipynb) - Neural machine translation with attention mechanism
 
+<br>
 
 ## References
-[TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples) - TensorFlow tutorials and code examples for beginners
+* [TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples) - TensorFlow tutorials and code examples for beginners
 
-[TensorFlow API](https://www.tensorflow.org/versions/r0.11/api_docs/index.html) - TensorFlow API Documentation
+* [TensorFlow API](https://www.tensorflow.org/versions/r0.11/api_docs/index.html) - TensorFlow API Documentation
 
