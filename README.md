@@ -14,7 +14,7 @@ This project is created for DAVIAN TensorFlow study.
 
 * [Convolutional Neural Network](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week2/convolutional_neural_network.ipynb) - Convnet for MNIST dataset classification
 * [Save and Restore Model] (https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week2/save_and_restore_model.ipynb) - Save and restore tensor variables
-* [Long Short-Term Memory](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week2/long_short_term_memory.ipynb) - LSTM for MNIST dataset classification
+* [Recurrent Neural Network](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week2/long_short_term_memory.ipynb) - LSTM RNN for MNIST dataset classification
 
 #### Week 3
 
