@@ -67,8 +67,8 @@ class DCGAN(object):
         
         # optimizer for discriminator and generator
         with tf.name_scope('optimizer'):
-            self.d_optimizer = tf.train.AdamOptimizer(learning_rate=self.learning_rate, beta1=0.5).minimize(self.d_loss, var_list=self.d_vars)
-            self.g_optimizer = tf.train.AdamOptimizer(learning_rate=self.learning_rate, beta1=0.5).minimize(self.g_loss, var_list=self.g_vars)                  
+            self.d_optimizer = tf.train.AdamOptimizer(self.learning_rate, beta1=0.5).minimize(self.d_loss, var_list=self.d_vars)
+            self.g_optimizer = tf.train.AdamOptimizer(self.learning_rate, beta1=0.5).minimize(self.g_loss, var_list=self.g_vars)                  
         
         # summary ops for tensorboard visualization
         tf.scalar_summary('d_loss_real', self.d_loss_real)
