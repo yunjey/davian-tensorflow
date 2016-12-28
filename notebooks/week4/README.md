@@ -1,5 +1,7 @@
 # Deep Convolutional Generative Adverserial Network
 
+![alt text] (jpg/tensorboard.jpg)
+
 <br>
 
 ## Usage
