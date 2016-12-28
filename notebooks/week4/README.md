@@ -1,29 +1,27 @@
 # Deep Convolutional Generative Adverserial Network
-Generative Adverserial Network(GAN): https://arxiv.org/abs/1406.2661
-
-Deep Convolutional Generative Adverserial Network(DCGAN): https://arxiv.org/abs/1511.06434
 
 <br>
 
 ## Usage
 
-Download celeb image dataset
+#### Download celeb image dataset
 ```bash
 chmod +x download.sh
 ./download.sh
 ```
 
-Center crop and resize image to 64x64 
+#### Center crop and resize image to 64x64 
 ```bash
 python prepro.py
 ```
 
-Train the model. 
+#### Train the model. 
 ```bash
 python train.py
 
 ```
 
+#### Real time debugging
 Open the new terminal, run command below and open http://163.152.51.7/:6005/ on your web browser.
 ```bash
 tensorboard --logdir=log --port=6005
@@ -32,5 +30,8 @@ tensorboard --logdir=log --port=6005
 
 
 ## Reference
+Generative Adverserial Network(GAN): https://arxiv.org/abs/1406.2661
 
-carpedm20's implementation: https://github.com/carpedm20/DCGAN-tensorflow
+Deep Convolutional Generative Adverserial Network(DCGAN): https://arxiv.org/abs/1511.06434
+
+Carpedm20's implementation: https://github.com/carpedm20/DCGAN-tensorflow
