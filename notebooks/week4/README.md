@@ -1,5 +1,6 @@
 # Deep Convolutional Generative Adverserial Network
 Generative Adverserial Network(GAN): https://arxiv.org/abs/1406.2661
+
 Deep Convolutional Generative Adverserial Network(DCGAN): https://arxiv.org/abs/1511.06434
 
 <br>
@@ -30,6 +31,6 @@ tensorboard --logdir=log --port=6005
 <br>
 
 
-## References
+## Reference
 
 carpedm20's implementation: https://github.com/carpedm20/DCGAN-tensorflow
