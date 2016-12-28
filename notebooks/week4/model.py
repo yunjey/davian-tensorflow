@@ -50,7 +50,7 @@ class DCGAN(object):
         self.logits_real = self.discriminator(self.images)                     # (batch_size,)
         self.logits_fake = self.discriminator(self.fake_images, reuse=True)    # (batch_size,)
         
-        # for test phase
+        # construct generator for test phase
         self.sampled_images = self.generator(self.z, reuse=True)               # (batch_size, 64, 64, 3)
         
         # compute loss 
@@ -59,38 +59,28 @@ class DCGAN(object):
         self.d_loss = self.d_loss_real + self.d_loss_fake
         self.g_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(self.logits_fake, tf.ones_like(self.logits_fake)))
         
-        # divide variables for generator and discriminator
+        # divide variables for discriminator and generator 
         t_vars = tf.trainable_variables()
-        self.g_vars = [var for var in t_vars if 'generator' in var.name]
         self.d_vars = [var for var in t_vars if 'discriminator' in var.name]
+        self.g_vars = [var for var in t_vars if 'generator' in var.name]
         
+        # optimizer for discriminator and generator
         with tf.name_scope('optimizer'):
-            # optimizers for generator 
-            g_optimizer = tf.train.AdamOptimizer(learning_rate=0.0002, beta1=0.5)
-            g_grads = tf.gradients(self.g_loss, self.g_vars)
-            g_grads_and_vars = list(zip(g_grads, self.g_vars))
-            self.g_train_op = g_optimizer.apply_gradients(g_grads_and_vars)
-            
-            # optimizers for discriminator
-            d_optimizer = tf.train.AdamOptimizer(learning_rate=self.learning_rate, beta1=0.5)
-            d_grads = tf.gradients(self.d_loss, self.d_vars)
-            d_grads_and_vars = list(zip(d_grads, self.d_vars))
-            self.d_train_op = d_optimizer.apply_gradients(d_grads_and_vars)                        
+            d_optimizer = tf.train.AdamOptimizer(learning_rate=self.learning_rate, beta1=0.5).minimizer(self.d_loss)
+            g_optimizer = tf.train.AdamOptimizer(learning_rate=self.learning_rate, beta1=0.5).minimizer(self.g_loss)                  
         
         
-        # summaries for tensorboard debugging
-        tf.scalar_summary("d_loss_real", self.d_loss_real)
-        tf.scalar_summary("d_loss_fake", self.d_loss_fake) 
-        tf.scalar_summary("g_loss", self.g_loss)
-        tf.scalar_summary("d_loss", self.d_loss)
-        tf.image_summary("fake_images", self.fake_images)
+        # summaries for tensorboard visualization
+        tf.scalar_summary('d_loss_real', self.d_loss_real)
+        tf.scalar_summary('d_loss_fake', self.d_loss_fake)
+        tf.scalar_summary('d_loss', self.d_loss)
+        tf.scalar_summary('g_loss', self.g_loss)
+        tf.image_summary('sampled_images', self.sampled_images)
         
         for var in tf.trainable_variables():
             tf.histogram_summary(var.op.name, var)
-        for grad, var in (g_grads_and_vars + d_grads_and_vars):
-            tf.histogram_summary(var.op.name+'/gradient', grad)
+            
         self.summary_op = tf.merge_all_summaries() 
-        
         
         self.saver = tf.train.Saver()
             
