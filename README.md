@@ -23,7 +23,7 @@ This project is created for DAVIAN TensorFlow study.
 
 #### Week 4
 
-* [Deep Convolutional Generative Adverserial Network](https://github.com/yunjey/davian-tensorflow/tree/master/notebooks/week4) - DCGAN for image generation
+* [Deep Convolutional Generative Adverserial Network](https://github.com/yunjey/davian-tensorflow/tree/master/notebooks/week4) - DCGAN for unsupervised image generation
 
 
 <br>
