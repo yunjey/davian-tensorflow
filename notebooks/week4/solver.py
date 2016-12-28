@@ -54,14 +54,14 @@ class Solver(object):
                     image_batch = data[i*model.batch_size:(i+1)*model.batch_size]
                     z_batch = np.random.uniform(-1, 1, size=[model.batch_size , model.dim_z])
                     feed_dict = {model.images: image_batch, model.z: z_batch}
-                    sess.run(model.d_train_op, feed_dict)
+                    sess.run(model.d_optimizer, feed_dict)
                     
                     # train the generator
                     feed_dict = {model.z: z_batch}
-                    sess.run(model.g_train_op, feed_dict)
+                    sess.run(model.g_optimizer, feed_dict)
                     
-                    # train the generator
-                    sess.run(model.g_train_op, feed_dict)
+                    # train the generator twice to stabilize traininig (different from paper)
+                    sess.run(model.g_optimizer, feed_dict)
                     
                     if i % 10 == 0:
                         feed_dict = {model.images: image_batch, model.z: z_batch}
