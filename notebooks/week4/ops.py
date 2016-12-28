@@ -1,5 +1,25 @@
 import tensorflow as tf
     
+
+class batch_norm(object):
+    """Computes batch normalization operation
+    
+    Args:
+        x: input tensor of shape (batch_size, width, height, channels_in) or (batch_size, dim_in)
+        train: True or False;  At train mode, it normalizes the input with mini-batch statistics
+                               At test mode, it normalizes the input with the moving averages and variances
+ 
+    Returns:
+        out: batch normalized output of the same shape with x
+    """
+    def __init__(self, name):
+        self.name = name
+    
+    def __call__(self, x, train=True):
+        out = tf.contrib.layers.batch_norm(x, decay=0.99, center=True, scale=True, activation_fn=None, 
+                                           updates_collections=None, is_training=train, scope=self.name)
+        return out
+    
     
 def conv2d(x, channel_out, k_w=5, k_h=5, s_w=2, s_h=2, name=None):
     """Computes convolution operation
@@ -72,26 +92,6 @@ def linear(x, dim_out, name=None):
         
         out = tf.matmul(x, w) + b
         
-        return out
-
-    
-class batch_norm(object):
-    """Computes batch normalization operation
-    
-    Args:
-        x: input tensor of shape (batch_size, width, height, channels_in) or (batch_size, dim_in)
-        train: True or False;  At train mode, it normalizes the input with mini-batch statistics
-                               At test mode, it normalizes the input with the moving averages and variances
- 
-    Returns:
-        out: batch normalized output of the same shape with x
-    """
-    def __init__(self, name):
-        self.name = name
-    
-    def __call__(self, x, train=True):
-        out = tf.contrib.layers.batch_norm(x, decay=0.99, center=True, scale=True, activation_fn=None, 
-                                           updates_collections=None, is_training=train, scope=self.name)
         return out
     
 
