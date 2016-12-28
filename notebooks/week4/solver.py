@@ -5,8 +5,7 @@ from scipy import ndimage
 
 
 class Solver(object):
-    """Train and Evaluate the DCGAN 
-    """
+    """Load dataset and train DCGAN"""
     
     def __init__(self, model, num_epoch=10, image_path='data/celeb_resized', model_save_path='model/', log_path='log/'):
         self.model = model
@@ -72,4 +71,3 @@ class Solver(object):
                     if i % 500 == 0:  
                         model.saver.save(sess, os.path.join(self.model_save_path, 'dcgan-%d' %(e+1)), global_step=i+1) 
                         print ('model/dcgan-%d-%d saved' %(e+1, i+1))
-         
