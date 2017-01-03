@@ -6,6 +6,12 @@
 
 ## Usage
 
+#### Clone the repository
+```bash
+git clone https://github.com/yunjey/davian-tensorflow.git
+cd davian-tensorflow/notebooks/week4
+```
+
 #### Download celeb image dataset
 ```bash
 chmod +x download.sh
@@ -31,7 +37,7 @@ tensorboard --logdir=log --port=6005
 <br>
 
 
-## Reference
+## References
 Generative Adverserial Network(GAN): https://arxiv.org/abs/1406.2661
 
 Deep Convolutional Generative Adverserial Network(DCGAN): https://arxiv.org/abs/1511.06434
