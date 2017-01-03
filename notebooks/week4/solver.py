@@ -2,6 +2,7 @@ import tensorflow as tf
 import numpy as np
 import os
 from scipy import ndimage
+from config import init_op, SummaryWriter
 
 
 class Solver(object):
@@ -44,14 +45,10 @@ class Solver(object):
         config.gpu_options.allow_growth = True
         with tf.Session(config=config) as sess:
             # initialize parameters 
-            try:
-                # tensorflow 0.12
-                tf.global_variables_initializer().run()
-            except:
-                # tensorflow < 0.11
-                tf.initialize_all_variables().run()
-                
-            summary_writer = tf.summary.FileWriter(logdir=self.log_path, graph=tf.get_default_graph())
+            sess.run(init_op)
+            
+            # tensorboard
+            summary_writer = SummaryWriter(logdir=self.log_path, graph=tf.get_default_graph())
              
             for e in range(self.num_epoch):
                 for i in range(num_iter_per_epoch):

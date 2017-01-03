@@ -1,6 +1,6 @@
 import tensorflow as tf
-from ops import batch_norm, conv2d, deconv2d
-from ops import linear, relu, lrelu
+from ops import *
+from config import * 
 
 
 class DCGAN(object):
@@ -73,16 +73,16 @@ class DCGAN(object):
             self.g_optimizer = tf.train.AdamOptimizer(self.learning_rate, beta1=0.5).minimize(self.g_loss, var_list=self.g_vars)                  
         
         # summary ops for tensorboard visualization
-        tf.summary.scalar('d_loss_real', self.d_loss_real)
-        tf.summary.scalar('d_loss_fake', self.d_loss_fake)
-        tf.summary.scalar('d_loss', self.d_loss)
-        tf.summary.scalar('g_loss', self.g_loss)
-        tf.summary.image('sampled_images', self.sampled_images)
+        scalar_summary('d_loss_real', self.d_loss_real)
+        scalar_summary('d_loss_fake', self.d_loss_fake)
+        scalar_summary('d_loss', self.d_loss)
+        scalar_summary('g_loss', self.g_loss)
+        image_summary('sampled_images', self.sampled_images)
         
         for var in tf.trainable_variables():
-            tf.summary.histogram(var.op.name, var)
+            histogram_summary(var.op.name, var)
             
-        self.summary_op = tf.summary.merge_all() 
+        self.summary_op = merge_summary() 
         
         self.saver = tf.train.Saver()
             
