@@ -27,7 +27,7 @@ class Solver(object):
     def load_dataset(self, image_path):
         print ('loading image dataset..')
         image_files = os.listdir(image_path)
-        images = np.array(map(lambda x: ndimage.imread(os.path.join(image_path, x), mode='RGB'), image_files)).astype(np.float32)
+        images = np.array(list(map(lambda x: ndimage.imread(os.path.join(image_path, x), mode='RGB'), image_files))).astype(np.float32)
         images = images / 127.5 - 1
         print ('finished loading image dataset..!')
         return images
@@ -48,8 +48,9 @@ class Solver(object):
                 # tensorflow 0.12
                 tf.global_variables_initializer().run()
             except:
-                # tensorflow <0.11
+                # tensorflow < 0.11
                 tf.initialize_all_variables().run()
+                
             summary_writer = tf.summary.FileWriter(logdir=self.log_path, graph=tf.get_default_graph())
              
             for e in range(self.num_epoch):
