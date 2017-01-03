@@ -82,7 +82,7 @@ class DCGAN(object):
         for var in tf.trainable_variables():
             tf.summary.histogram(var.op.name, var)
             
-        self.summary_op = tf.merge_all_summaries() 
+        self.summary_op = tf.summary.merge_all() 
         
         self.saver = tf.train.Saver()
             
