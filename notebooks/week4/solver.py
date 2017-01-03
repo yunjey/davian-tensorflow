@@ -45,7 +45,10 @@ class Solver(object):
         config.gpu_options.allow_growth = True
         with tf.Session(config=config) as sess:
             # initialize parameters 
-            sess.run(init_op)
+            try:
+                tf.global_variables_initializer().run()
+            except:
+                tf.initialize_all_variables().run()
             
             # tensorboard
             summary_writer = SummaryWriter(logdir=self.log_path, graph=tf.get_default_graph())

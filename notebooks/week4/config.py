@@ -16,4 +16,4 @@ except:
     histogram_summary = tf.histogram_summary
     merge_summary = tf.merge_all_summaries
     SummaryWriter = tf.train.SummaryWriter
-    init_op = tf.initialize_all_variables().run()
+    init_op = tf.initialize_all_variables()
