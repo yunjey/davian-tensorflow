@@ -23,7 +23,7 @@ def prepro_image(img_folder, resized_folder):
     if not os.path.exists(resized_folder):
         os.makedirs(resized_folder)
 
-    print 'Start resizing images.'
+    print ('Start resizing images.')
     image_files = os.listdir(img_folder)
     num_images = len(image_files)
     for i, image_file in enumerate(image_files):
@@ -32,7 +32,7 @@ def prepro_image(img_folder, resized_folder):
                 image = center_crop(image)
                 image.save(os.path.join(resized_folder, image_file), image.format)
         if i % 100 == 0:
-            print 'Resized images: %d/%d' %(i, num_images)
+            print ('Resized images: %d/%d' %(i, num_images))
 
             
 def main():
