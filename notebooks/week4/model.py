@@ -1,5 +1,7 @@
 import tensorflow as tf
-from ops import * 
+from ops import batch_norm, conv2d, deconv2d
+from ops import linear, relu, lrelu
+
 
 class DCGAN(object):
     """Deep Convolutional Generative Adversarial Network
@@ -71,14 +73,14 @@ class DCGAN(object):
             self.g_optimizer = tf.train.AdamOptimizer(self.learning_rate, beta1=0.5).minimize(self.g_loss, var_list=self.g_vars)                  
         
         # summary ops for tensorboard visualization
-        tf.scalar_summary('d_loss_real', self.d_loss_real)
-        tf.scalar_summary('d_loss_fake', self.d_loss_fake)
-        tf.scalar_summary('d_loss', self.d_loss)
-        tf.scalar_summary('g_loss', self.g_loss)
-        tf.image_summary('sampled_images', self.sampled_images)
+        tf.summary.scalar('d_loss_real', self.d_loss_real)
+        tf.summary.scalar('d_loss_fake', self.d_loss_fake)
+        tf.summary.scalar('d_loss', self.d_loss)
+        tf.summary.scalar('g_loss', self.g_loss)
+        tf.summary.image('sampled_images', self.sampled_images)
         
         for var in tf.trainable_variables():
-            tf.histogram_summary(var.op.name, var)
+            tf.summary.histogram(var.op.name, var)
             
         self.summary_op = tf.merge_all_summaries() 
         
@@ -105,7 +107,7 @@ class DCGAN(object):
             
             # spatial size for convolution
             s = self.output_size
-            s2, s4, s8, s16 = s/2, s/4, s/8, s/16     # 32, 16, 8, 4
+            s2, s4, s8, s16 = int(s/2), int(s/4), int(s/8), int(s/16)     # 32, 16, 8, 4
             
             # project and reshape z 
             h1= linear(z, s16*s16*self.dim_gf*8, name='g_h1')     # (batch_size, 4*4*512)
