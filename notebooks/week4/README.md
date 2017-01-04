@@ -32,6 +32,8 @@ python train.py
 #### Real time debugging
 Open the new terminal, run command below and open http://163.152.51.7/:6005/ on your web browser.
 ```bash
+source anaconda2/bin/activate ~/anaconda2   or   source anaconda3/bin/activate ~/anaconda3
+cd davian-tensorflow/notebooks/week4
 tensorboard --logdir=log --port=6005
 ```
 <br>
