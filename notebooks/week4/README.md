@@ -1,6 +1,8 @@
 # Deep Convolutional Generative Adverserial Network
 
-### You can download pdf file [here](https://github.com/yunjey/davian-tensorflow/raw/master/notebooks/week4/DCGAN.pdf).
+TensorFlow reimplementation of [Deep Convolutional Generative Adverserial Network(DCGAN)] (https://arxiv.org/abs/1511.06434) for DAVIAN lab study.
+
+You can download pdf file [here](https://github.com/yunjey/davian-tensorflow/raw/master/notebooks/week4/DCGAN.pdf).
 
 ![alt text] (jpg/tensorboard.jpg)
 
@@ -32,7 +34,7 @@ python train.py
 ```
 
 #### Real time debugging
-Open the new terminal, run command below and open http://163.152.51.7/:6005/ on your web browser.
+Open the new terminal, run command below and open http://163.152.20.64/:6005/ on your web browser.
 ```bash
 source anaconda2/bin/activate ~/anaconda2   or   source anaconda3/bin/activate ~/anaconda3
 cd davian-tensorflow/notebooks/week4
