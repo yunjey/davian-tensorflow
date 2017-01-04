@@ -16,7 +16,7 @@ git clone https://github.com/yunjey/davian-tensorflow.git
 cd davian-tensorflow/notebooks/week4
 ```
 
-#### Download celeb image dataset
+#### Download CelebA image dataset
 ```bash
 chmod +x download.sh
 ./download.sh
