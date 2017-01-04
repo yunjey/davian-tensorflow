@@ -1,6 +1,6 @@
 # Deep Convolutional Generative Adverserial Network
 
-### pdf file can be download [here](https://github.com/yunjey/davian-tensorflow/raw/master/notebooks/week4/DCGAN.pdf).
+### You can download pdf file [here](https://github.com/yunjey/davian-tensorflow/raw/master/notebooks/week4/DCGAN.pdf).
 
 ![alt text] (jpg/tensorboard.jpg)
 
