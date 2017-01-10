@@ -27,7 +27,7 @@ This project is created for DAVIAN TensorFlow study.
 
 #### Week 5
 
-TensorBoard Embedding Visualization - will be updated
+* TensorBoard Embedding Visualization - will be updated
 
 <br>
 
