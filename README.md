@@ -25,6 +25,9 @@ This project is created for DAVIAN TensorFlow study.
 
 * [Deep Convolutional Generative Adverserial Network](https://github.com/yunjey/davian-tensorflow/tree/master/notebooks/week4) - DCGAN for unsupervised image generation
 
+#### Week 5
+
+TensorBoard Embedding Visualization - will be updated
 
 <br>
 
