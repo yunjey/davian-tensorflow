@@ -1,4 +1,4 @@
-# TensorBoard: Convolution Activation Map Visualization / Embedding
+# TensorBoard: Embedding Visualization
 
 
 
