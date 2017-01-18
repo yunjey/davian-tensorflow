@@ -1,6 +1,6 @@
 # TensorBoard: Embedding Visualization
 
-[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+![alt text](emb_projector.gif)
 
 
 
