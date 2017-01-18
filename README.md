@@ -27,7 +27,7 @@ This project is created for DAVIAN TensorFlow study.
 
 #### Week 5
 
-* [TensorBoard Embedding Visualization](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week5/README.md) - Neural network hidden layer embedding and visualization (TSNE/PCA)
+* [TensorBoard Embedding Visualization](https://github.com/yunjey/davian-tensorflow/tree/master/notebooks/week5) - Neural network hidden layer embedding and visualization (TSNE/PCA)
 
 <br>
 
