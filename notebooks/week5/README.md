@@ -1,6 +1,6 @@
 # TensorBoard: Embedding Visualization
 
-![alt text](emb_projector.gif)
+![alt text](jpg/emb_projector.gif)
 
 
 ### Exercises
