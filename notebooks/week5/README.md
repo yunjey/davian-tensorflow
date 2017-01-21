@@ -10,7 +10,7 @@
 git clone https://github.com/yunjey/davian-tensorflow.git
 cd davian-tensorflow/notebooks/week5
 ```
-<br>
+
 #### 2. Complete the Exercises
 
 - Implement Basic Embedding Projector
@@ -21,6 +21,5 @@ cd davian-tensorflow/notebooks/week5
   - [Exercise](2. embedding_projector_with_cnn.ipynb)
   - [Solution](2. embedding_projector_with_cnn_solution.ipynb)
 
-<br>
 ## Reference
 TensorBoard: Embedding Visualization: https://www.tensorflow.org/how_tos/embedding_viz/
