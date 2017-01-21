@@ -1,5 +1,5 @@
 # DAVIAN TensorFlow (ongoing)
-This project is created for DAVIAN TensorFlow study.
+This repository is created for DAVIAN TensorFlow study.
 
 <br>
 
