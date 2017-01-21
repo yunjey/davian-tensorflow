@@ -1,5 +1,5 @@
 # DAVIAN TensorFlow (ongoing)
-This project is created for DAVIAN TensorFlow study.
+This repository is created for DAVIAN TensorFlow study.
 
 <br>
 
@@ -28,11 +28,3 @@ This project is created for DAVIAN TensorFlow study.
 #### Week 5
 
 * [TensorBoard Embedding Visualization](https://github.com/yunjey/davian-tensorflow/tree/master/notebooks/week5) - Neural network hidden layer embedding and visualization (TSNE/PCA)
-
-<br>
-
-## References
-* [TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples) - TensorFlow tutorials and code examples for beginners
-
-* [TensorFlow API](https://www.tensorflow.org/versions/r0.11/api_docs/index.html) - TensorFlow API Documentation
-
