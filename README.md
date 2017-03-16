@@ -6,7 +6,7 @@ This repository is created for DAVIAN TensorFlow study.
 ## Tutorial index
 #### Week 1 
 * [Introduction to MNIST dataset](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week1/1.%20mnist_data_introduction.ipynb) - Download and visualize MNIST dataset
-* [TensorFlow basic] (https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week1/2.%20tensorflow_basic.ipynb) - Session / Constants / Variables / Sharing variables / Placeholder
+* [TensorFlow basic](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week1/2.%20tensorflow_basic.ipynb) - Session / Constants / Variables / Sharing variables / Placeholder
 * [Feed forward neural network](https://github.com/yunjey/davian-tensorflow/blob/master/notebooks/week1/3.%20feed_forward_neural_network.ipynb) - Neural network for MNIST dataset classification
 
 
